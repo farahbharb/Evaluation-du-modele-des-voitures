@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='mesStyles.css'>
+    <script src="controles.js"></script>
+</head>
+<body>
+<h3>Modèles BYD disponibles</h3>
+
+<div class="modeles-container">
+
+    <div class="modele-card">
+        <img src="BYD Atto 3.jpg" alt="BYD Atto 3">
+        <h4>BYD Atto 3</h4>
+        <p>SUV compact 100% électrique, autonomie jusqu'à 420 km.</p>
+    </div>
+
+    <div class="modele-card">
+        <img src="BYD Dolphin.jpg" alt="BYD Dolphin">
+        <h4>BYD Dolphin</h4>
+        <p>Citadine électrique moderne, autonomie jusqu'à 340 km.</p>
+    </div>
+
+    <div class="modele-card">
+        <img src="BYD Seal.jpg" alt="BYD Seal">
+        <h4>BYD Seal</h4>
+        <p>Berline sportive électrique, autonomie jusqu'à 520 km.</p>
+    </div>
+
+</div>
+<!--continuer  ici-->
+<form action="merci.html" method="post" id="f" name="f" onsubmit="return verif2()">
+    <fieldset>
+        <legend>Evaluation du modele</legend>
+        <table>
+            <tr>
+                <td >
+                    <label>n° permis:</label> 
+                    <input id="np" name="np" type="text">
+                </td>
+                <td colspan="2">
+                    <label for="">modele teste:</label>
+                    <select name="md" id="md">
+                        <option value="">Choisir un modele</option>
+                        <option value="1">BYD Atto</option>
+                        <option value="2">BYD Dollphin</option>
+                        <option value="3">BYD Seal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>notre attribuées</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">securité (1à5)</label>
+                    <input type="text" name="s" id="s">
+                </td>
+                <td>
+                    <label for="">conduit (1à5)</label>
+                    <input type="text" name="cd" id="cd">
+                </td>
+                <td>
+                    <label for="">confort (1à5)</label>
+                    <input type="text" name="cf" id="cf">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" name="rb" id="rb" value="rb"><span>je ne suis pas un robot</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input class="btn" type="submit" id="b1" value="ajouter">
+                    <input class="btn" type="reset" id="b2" value="annuler">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<div id="erreurs"></div>
+</body>
+</html>

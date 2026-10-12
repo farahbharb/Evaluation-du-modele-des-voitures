@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='mesStyles.css'>
+    <script src="controles.js"></script>
+</head>
+<body>
+    <form action=Evaluation.html" method="post" name="f" id="f" onsubmit="return verif1()" >
+        <fieldset>
+            <legend>enregistrement d'un testeur </legend>
+            <div>          
+                <label for="">N°permis:</label>
+                <input id="np" name="np" type="text" maxlength="8">
+            </div>
+            <div>          
+                <label for="">nom:</label>
+                <input id="no" name="no" type="text" maxlength="20">
+            </div>
+            <div>          
+                <label for="">prenom:</label>
+                <input id="pr" name="pr" type="text" maxlength="20">
+            </div>
+            <div>          
+                <label for="">genre:</label>
+                <input value="M" id="gn1" name="gn" type="radio" ><span>masculin</span>
+                <input value="F" id="gn2" name="gn" type="radio" ><span>feminin</span>
+            </div>
+            <div>          
+                <label for="">ville:</label>
+                <select name="vl" id="vl" size="5">
+                    <option value="">Choisir votre ville</option>
+                    <option value="1">Gafsa</option>
+                    <option value="2">El kef</option>
+                    <option value="3">Sousse</option>
+                    <option value="4">Tunis</option>
+                    <option value="5">Djerba</option>
+                </select> 
+            </div>
+            <div>
+                <input class="btn" type="submit" id="b1" value="ajouter">
+                <input class="btn" type="reset" id="b2" value="annuler">
+            </div>
+        </fieldset>
+    </form>
+    <div id="erreurs">
+
+    </div>
+</body>
+</html>
